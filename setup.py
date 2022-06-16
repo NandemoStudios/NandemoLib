@@ -23,7 +23,7 @@ hasTk = input("Do you want NanTk?(y/n): ")
 if hasTk == 'n':
   print('NanTk has not been installed')
 else:
-  Au = open("NanTk.py",'w')
+  Au = open("NanTk.py",'w+')
   Au.write(file3.text)
   Au.close()
 
