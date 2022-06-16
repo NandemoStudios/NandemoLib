@@ -10,3 +10,8 @@ else:
   file.write(ftext)
   file.close()
   
+def CreateTk(title, geometry):
+  root = Tk()
+  root.title(title)
+  root.geometry(geometry)
+  return root
