@@ -18,3 +18,5 @@ def IsDev():
     print("Welcome.. Dev")
   else:
     pass
+
+IsDev()
