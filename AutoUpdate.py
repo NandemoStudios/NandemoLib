@@ -22,7 +22,7 @@ else:
     f = open("main.py",'w')
     f.write(maintext)
     f.close()
-    f = open("AutoUpdate.py")
+    f = open("AutoUpdate.py",'w')
     f.write(updatetext)
     f.close()
     print("Update has been complete, stopping the program")
