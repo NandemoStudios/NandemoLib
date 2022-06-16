@@ -1,3 +1,6 @@
+import AutoUpdate
+AutoUpdate.CheckUpdate()
+
 dev = 0
 
 if __name__ == '__main__':
@@ -6,7 +9,6 @@ if __name__ == '__main__':
     dev = 1
     print("Developer mode activated")
   else:
-    pass
+    print("Developer mode inactivated")
 else:
   pass
-  
