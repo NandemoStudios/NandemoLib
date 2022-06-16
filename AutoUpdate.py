@@ -9,7 +9,7 @@ update = requests.get('https://raw.githubusercontent.com/NandemoStudios/NandemoL
 maintext = main.text
 updatetext = update.text
   
-if maintext == open("main.py",'r+').read() and updatetext == open("AutoUpdate.py",'r'):
+if maintext == open("main.py",'r+').read() and updatetext == open("AutoUpdate.py",'r').read():
   print("You all up to date")
   time.sleep(0)
 else:
