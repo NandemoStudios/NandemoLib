@@ -12,3 +12,9 @@ if __name__ == '__main__':
     print("Developer mode inactivated")
 else:
   pass
+
+def IsDev():
+  if dev == 1:
+    print("Welcome.. Dev")
+  else:
+    pass
