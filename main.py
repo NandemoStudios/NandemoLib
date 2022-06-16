@@ -1,5 +1,4 @@
 import AutoUpdate
-AutoUpdate.CheckUpdate()
 
 dev = 0
 
