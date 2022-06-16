@@ -3,10 +3,13 @@ import time
 import os
 
 main =requests.get('https://raw.githubusercontent.com/NandemoStudios/NandemoLib/main/main.py')
+
+update = requests.get('https://raw.githubusercontent.com/NandemoStudios/NandemoLib/main/AutoUpdate.py')
   
 maintext = main.text
+updatetext = update.text
   
-if maintext == open("main.py",'r+').read():
+if maintext == open("main.py",'r+').read() and updatetext == open("AutoUpdate.py"):
   print("You all up to date")
   time.sleep(0)
 else:
@@ -17,11 +20,10 @@ else:
     print("Update installing")
     time.sleep(1)
     f = open("main.py",'w')
-    print("Writing the update")
-    time.sleep(1)
     f.write(maintext)
-    print("Fisnishing the update up")
-    time.sleep(1)
+    f.close()
+    f = open("AutoUpdate.py")
+    f.write(updatetext)
     f.close()
     print("Update has been complete, stopping the program")
     time.sleep(1)
