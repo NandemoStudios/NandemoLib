@@ -15,9 +15,6 @@ response = requests.get('https://raw.githubusercontent.com/NandemoStudios/Nandem
 print("Retrieving the files...")
 file = requests.get('https://raw.githubusercontent.com/NandemoStudios/NandemoLib/main/AutoUpdate.py')
 file2 = requests.get('https://raw.githubusercontent.com/NandemoStudios/NandemoLib/main/main.py')
-file3 = requests.get('https://raw.githubusercontent.com/NandemoStudios/NandemoLib/main/NanTk.py')
-file4 = requests.get('https://raw.githubusercontent.com/NandemoStudios/NandemoLib/main/game/quiz.py')
-time.sleep(1)
 
 ## Writes the files to the correct files
 print("Files found, downloading them now..")
@@ -36,22 +33,6 @@ Au.write(file2.text)
 Au.close()
 time.sleep(1)
 print("Downloading: 100%")
-
-hasTk = input("Do you want NanTk?(y/n): ")
-if hasTk == 'n':
-  print('NanTk has not been installed')
-else:
-  Au = open("NanTk.py",'w+')
-  Au.write(file3.text)
-  Au.close()
-
-hasquiz = input("Do you want the quiz game?(y/n): ")
-if hasquiz.lower() == 'n':
-  print("Quiz has not been installed")
-else:
-  Au = open('quiz.py','w+')
-  Au.write(file4.text)
-  Au.close()
 
 print("Download complete")
 
