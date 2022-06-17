@@ -3,6 +3,7 @@ import AutoUpdate
 dev = 0
 
 if __name__ == '__main__':
+  print("You are running this file as a file, not a module... ")
   isdev = input("Would you like to enter developer mode? (y/n): ")
   if isdev.lower() == 'y':
     dev = 1
